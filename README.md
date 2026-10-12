@@ -6,7 +6,7 @@ A practical reference entry for product and engineering: the locally-uncensored 
 
 ## Images
 
-[![locally-uncensored](images/preview.png)](https://github.com/Swift-Tech-Co)
+[![locally-uncensored](images/preview.png)](https://github.com/Swift-Tech-Co/locally-uncensored)
 
 ## Download
 
@@ -17,7 +17,6 @@ Take the latest build from Releases.
 | Windows 10 and 11 | `Locally.Uncensored_3.0.5_x64-setup.exe` (NSIS, recommended) or `Locally.Uncensored_3.0.5_x64_en-US.msi` | Tested every release, signed auto update channel |
 | Linux | `Locally.Uncensored_3.0.5_amd64.AppImage`, `Locally.Uncensored_3.0.5_amd64.deb` or `Locally.Uncensored-3.0.5-1.x86_64.rpm` | Built on every release |
 | macOS | no desktop build | LU Cloud runs in the browser at lu-labs.ai |
-
 
 Code signing for the Windows installers: free code signing provided by SignPath.io, certificate by SignPath Foundation. The application is in review, and until it is approved the installers ship unsigned.
 
@@ -53,7 +52,7 @@ Walkthrough with screenshots: Getting started guide. New to local AI: the five m
 <summary><strong>Build from source, or contribute</strong></summary>
 
 ```bash
-git clone https://www.swifttechco.com
+git clone https://github.com/Swift-Tech-Co/locally-uncensored
 cd locally-uncensored
 npm install
 npm run dev          # browser dev mode
@@ -77,7 +76,6 @@ npm run tauri build  # desktop binary
 **Everywhere.** Reach the app from your phone over your LAN or through a Cloudflare tunnel, paired by QR code and a passcode, off until you turn it on, with connected devices listed. Compare two models side by side, benchmark them on your own hardware for speed, cost and correctness, and take updates over a signed channel. Phone details.
 
 ## Optional: LU Labs Cloud
-
 
 Since 3.0.0 the catalogue says what it can back up. Every cloud chat model was asked the same two questions twice and judged on the answer, and a longer three-round test on 2026-10-05 took the mark from five more: 19 of the 46 we measured answer in full, and only those carry a No refusals mark in the picker. Across all measured answers, 5% were refusals. 12 models cost no credits at all in chat on an active plan, up to 500,000 input and output tokens per day. For images and video, 14 video and 7 image models run without a built-in content restriction, most of them with Uncensored in the name, and your account decides what they may produce.
 
@@ -186,7 +184,7 @@ Tauri v2 with a Rust backend, React 19, TypeScript, Tailwind CSS 4, Vite 8, Comf
 
 ## Community
 
-Telegram: **https://www.swifttechco.com with help channels for chat, images, video and the coding agent. Bugs and ideas: Issues and Discussions.
+Telegram: **https://github.com/Swift-Tech-Co/locally-uncensored with help channels for chat, images, video and the coding agent. Bugs and ideas: Issues and Discussions.
 
 ## License
 
@@ -216,13 +214,21 @@ Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: swifttechco.com
+- Website: https://github.com/Swift-Tech-Co/locally-uncensored
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [PurpleDoubleD/locally-uncensored](https://github.com/PurpleDoubleD/locally-uncensored) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
 
 ## Sources
 
