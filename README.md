@@ -1,51 +1,25 @@
-<div align="center">
+# locally-uncensored
 
-<img src="logos/LU-monogram-bw.png" alt="Locally Uncensored" width="80">
+## What This Is
 
-# Locally Uncensored
+A practical reference entry for product and engineering: the locally-uncensored notes, examples and fixes we reach for repeatedly. Kept current as part of the wider Swift Tech Co. engineering library.
 
 ## Images
 
-[![locally-uncensored](https://opengraph.githubassets.com/1/PurpleDoubleD/locally-uncensored)](https://www.swifttechco.com)
-
-
-**The all-in-one local AI studio for your desktop. Chat, images, video and a coding agent in one app. Install it, pick a model, go.**
-
-Free, open source, Windows and Linux. Everything runs on your own machine. No Docker, no terminal, no config files.
-
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.swifttechco.com)
-[![GitHub stars](https://img.shields.io/github/stars/PurpleDoubleD/locally-uncensored?style=social)](https://www.swifttechco.com)
-[![GitHub last commit](https://img.shields.io/github/last-commit/PurpleDoubleD/locally-uncensored)](https://www.swifttechco.com)
-[![GitHub Discussions](https://img.shields.io/github/discussions/PurpleDoubleD/locally-uncensored)](https://www.swifttechco.com)
-[![Telegram](https://img.shields.io/telegram/1496087522042843146?style=flat-square&logo=telegram&label=Telegram&color=5865F2)](https://www.swifttechco.com)
-[![Website](https://img.shields.io/badge/Website-locallyuncensored.com-8b5cf6)](https://www.swifttechco.com)
-
-<img src="docs/demo.gif" alt="Locally Uncensored in use" width="700">
-
-[Download](#download) · [Three steps](#three-steps) · [What is in the box](#what-is-in-the-box) · [How it compares](#how-it-compares) · [Models](#models-that-run-well) · [FAQ](#faq)
-
-| Chat that draws your images | Images and video in the same window |
-|:---:|:---:|
-| [![Chat](docs/screenshots/chat_generate_dark.webp)](https://www.swifttechco.com) | [![Create](docs/screenshots/create_gallery_dark.webp)](https://www.swifttechco.com) |
-| **The coding agent shows the diff first** | **Agent mode does the legwork** |
-| [![Coding agent](docs/screenshots/coding_review_dark.webp)](https://www.swifttechco.com) | [![Agent mode](docs/screenshots/agent_mode_dark.webp)](https://www.swifttechco.com) |
-
-</div>
-
----
+[![locally-uncensored](images/preview.png)](https://github.com/Swift-Tech-Co)
 
 ## Download
 
-Take the latest build from [Releases](https://www.swifttechco.com).
+Take the latest build from Releases.
 
 | Platform | File | Status |
 |----------|------|--------|
-| Windows 10 and 11 | [`Locally.Uncensored_3.0.5_x64-setup.exe`](https://www.swifttechco.com) (NSIS, recommended) or [`Locally.Uncensored_3.0.5_x64_en-US.msi`](https://www.swifttechco.com) | Tested every release, signed auto update channel |
-| Linux | [`Locally.Uncensored_3.0.5_amd64.AppImage`](https://www.swifttechco.com), [`Locally.Uncensored_3.0.5_amd64.deb`](https://www.swifttechco.com) or [`Locally.Uncensored-3.0.5-1.x86_64.rpm`](https://www.swifttechco.com) | Built on every release |
-| macOS | no desktop build | LU Cloud runs in the browser at [lu-labs.ai](https://www.swifttechco.com) |
+| Windows 10 and 11 | `Locally.Uncensored_3.0.5_x64-setup.exe` (NSIS, recommended) or `Locally.Uncensored_3.0.5_x64_en-US.msi` | Tested every release, signed auto update channel |
+| Linux | `Locally.Uncensored_3.0.5_amd64.AppImage`, `Locally.Uncensored_3.0.5_amd64.deb` or `Locally.Uncensored-3.0.5-1.x86_64.rpm` | Built on every release |
+| macOS | no desktop build | LU Cloud runs in the browser at lu-labs.ai |
 
 
-Code signing for the Windows installers: free code signing provided by [SignPath.io](https://www.swifttechco.com), certificate by [SignPath Foundation](https://www.swifttechco.com). The application is in review, and until it is approved the installers ship unsigned.
+Code signing for the Windows installers: free code signing provided by SignPath.io, certificate by SignPath Foundation. The application is in review, and until it is approved the installers ship unsigned.
 
 Current release: **v3.0.5** (October 2026). Every change since 1.0.0 is in [CHANGELOG.md](CHANGELOG.md).
 
@@ -73,7 +47,7 @@ Current release: **v3.0.5** (October 2026). Every change since 1.0.0 is in [CHAN
 2. **Pick a model.** The model manager marks which models fit your hardware and downloads them in one click. It works with the engine you already have (Ollama, LM Studio and others) and can link models those tools already store, without copying them.
 3. **Create.** Chat, Create, Code and Agent are tabs in one window. Type in one, switch to the next, keep the same models.
 
-Walkthrough with screenshots: [Getting started guide](https://www.swifttechco.com). New to local AI: [the five minute beginner guide](https://www.swifttechco.com).
+Walkthrough with screenshots: Getting started guide. New to local AI: the five minute beginner guide.
 
 <details>
 <summary><strong>Build from source, or contribute</strong></summary>
@@ -94,13 +68,13 @@ npm run tauri build  # desktop binary
 
 **Chat.** Models that answer directly, without refusals, next to the mainstream ones in the same menu. Thinking is shown as it happens, with an effort control on the models that offer one. Upload an image and ask about it, chat with your own documents through a local index, talk instead of typing and have answers read back, keep a memory across conversations, switch personas, and import your ChatGPT, Claude or Gemini export so the old threads come with you. A long conversation folds its older turns into a summary instead of running out of room.
 
-**Create.** Images and video on your own GPU through a ComfyUI the app installs, starts, repairs and updates for you. No node graphs. The lanes are text to image, edit and image to image with a mask for inpainting, remove background, video, animate an image, extend a clip, motion control, talking character, music, and Character Studio, which trains a character on your own card and drops it into your local LoRA folder. A LoRA picker with a stack and strength sliders reads the folder live, and everything you make lands in the gallery. Upscale and Erase Object are the two lanes that run in the cloud only. [How it works](https://www.swifttechco.com).
+**Create.** Images and video on your own GPU through a ComfyUI the app installs, starts, repairs and updates for you. No node graphs. The lanes are text to image, edit and image to image with a mask for inpainting, remove background, video, animate an image, extend a clip, motion control, talking character, music, and Character Studio, which trains a character on your own card and drops it into your local LoRA folder. A LoRA picker with a stack and strength sliders reads the folder live, and everything you make lands in the gallery. Upscale and Erase Object are the two lanes that run in the cloud only. How it works.
 
 **Code.** A coding agent that builds a map of the repo, edits only the lines you asked for, shows the diff before it applies anything, runs your tests and reads the failures, and carries typed git tools and per project rules in a `.lurules` file. Ask, Plan and Bypass modes per conversation, a file explorer with preview, and a workspace per project. A Local API in Settings puts every local model on one OpenAI compatible address behind a token, so your other coding tools can use the same machine.
 
 **Agent.** Web search and fetch, reading and writing files, a shell, code execution, screenshots, image and video generation, and your own MCP servers on top. Long jobs go to background agents that work while you carry on, and a panel shows what is running. Every tool call passes a permission gate you control, and a read only run stays read only.
 
-**Everywhere.** Reach the app from your phone over your LAN or through a Cloudflare tunnel, paired by QR code and a passcode, off until you turn it on, with connected devices listed. Compare two models side by side, benchmark them on your own hardware for speed, cost and correctness, and take updates over a signed channel. [Phone details](https://www.swifttechco.com).
+**Everywhere.** Reach the app from your phone over your LAN or through a Cloudflare tunnel, paired by QR code and a passcode, off until you turn it on, with connected devices listed. Compare two models side by side, benchmark them on your own hardware for speed, cost and correctness, and take updates over a signed channel. Phone details.
 
 ## Optional: LU Labs Cloud
 
@@ -126,7 +100,7 @@ Since 3.0.0 the catalogue says what it can back up. Every cloud chat model was a
 | Runs without Docker | **Yes** | No | Yes | Yes | Yes |
 | Open source | **Yes** | Yes | No | Yes | Yes |
 
-Deep dives: [vs LM Studio](https://www.swifttechco.com) · [vs Jan](https://www.swifttechco.com) · [vs Open WebUI](https://www.swifttechco.com) · [vs GPT4All](https://www.swifttechco.com) · [vs Msty](https://www.swifttechco.com) · [vs KoboldCpp](https://www.swifttechco.com) · [vs SillyTavern](https://www.swifttechco.com) · [LM Studio alternatives](https://www.swifttechco.com) · [Best local AI apps 2026](https://www.swifttechco.com)
+Deep dives: vs LM Studio · vs Jan · vs Open WebUI · vs GPT4All · vs Msty · vs KoboldCpp · vs SillyTavern · LM Studio alternatives · Best local AI apps 2026
 
 ## Models that run well
 
@@ -144,7 +118,7 @@ The model manager holds the full catalog and marks what fits your machine. These
 | GLM 4.7 Flash Heretic | 10 GB | 30B class in an IQ2_M build that fits 12 GB. |
 | Qwen 3.6 35B MoE Abliterated | 24 GB | 35B total with 3B active, vision and agentic coding. |
 
-GLM 5.3 is in the catalog too, but its smallest local quant is 217 GB, so on a desktop it is cloud territory. [Kimi K3 is further out still](https://www.swifttechco.com).
+GLM 5.3 is in the catalog too, but its smallest local quant is 217 GB, so on a desktop it is cloud territory. Kimi K3 is further out still.
 
 ### Image
 
@@ -184,7 +158,7 @@ If you already run a local engine, the app finds it and lists it instead of inst
 Yes. AGPL-3.0, no account, no usage limits. In local mode chat, agent runs and image and video generation all happen on your machine, with no telemetry and no analytics. The app checks GitHub for updates, and pressing the Cloud switch sends one anonymous daily count, which Settings names.
 
 **What does "uncensored" mean?**
-Abliterated models have the trained in refusal behaviour removed from the weights, so it is not a jailbreak that can be patched or break. They answer directly, without refusals. [Full guide](https://www.swifttechco.com).
+Abliterated models have the trained in refusal behaviour removed from the weights, so it is not a jailbreak that can be patched or break. They answer directly, without refusals. Full guide.
 
 **What hardware do I need?**
 Chat runs a 3B model on 8 GB of system RAM with no GPU at all, and an 8B model comfortably on a 6 GB card. Image generation starts at 6 to 8 GB of VRAM, and so does video on AnimateDiff Lightning or FramePack F1; the Wan and Hunyuan models want 12 GB or more. The model manager marks what fits before you download.
@@ -196,7 +170,7 @@ For most chat, writing and coding, yes, with a good 8B to 14B local model, and i
 No. It is off until you turn it on, gated by a passcode, and it lists the devices that are connected. On your LAN nothing leaves the network; away from home an encrypted Cloudflare tunnel joins phone and PC. No third party AI server is involved.
 
 **What about macOS?**
-There is no macOS desktop build. Every release builds Windows and Linux only. On a Mac, use LU Cloud in the browser at [lu-labs.ai](https://www.swifttechco.com), which runs chat, images and video on hosted GPUs.
+There is no macOS desktop build. Every release builds Windows and Linux only. On a Mac, use LU Cloud in the browser at lu-labs.ai, which runs chat, images and video on hosted GPUs.
 
 ## Roadmap
 
@@ -204,7 +178,7 @@ There is no macOS desktop build. Every release builds Windows and Linux only. On
 - [ ] Face ID and PuLID in Create, so a character keeps one face across images
 - [ ] Upscale and Erase Object as local lanes; both run in the cloud today
 
-Everything else listed here has shipped. See [Releases](https://www.swifttechco.com) for the history.
+Everything else listed here has shipped. See Releases for the history.
 
 ## Tech stack
 
@@ -212,7 +186,7 @@ Tauri v2 with a Rust backend, React 19, TypeScript, Tailwind CSS 4, Vite 8, Comf
 
 ## Community
 
-Telegram: **https://www.swifttechco.com with help channels for chat, images, video and the coding agent. Bugs and ideas: [Issues](https://www.swifttechco.com) and [Discussions](https://www.swifttechco.com).
+Telegram: **https://www.swifttechco.com with help channels for chat, images, video and the coding agent. Bugs and ideas: Issues and Discussions.
 
 ## License
 
@@ -224,7 +198,7 @@ AGPL-3.0-only. See [LICENSE](LICENSE).
 
 **Your data stays on your machine.**
 
-[Website](https://www.swifttechco.com) · [Beginner guide](https://www.swifttechco.com) · [Blog](https://www.swifttechco.com) · [Report a bug](https://www.swifttechco.com) · [Request a feature](https://www.swifttechco.com)
+Website · Beginner guide · Blog · Report a bug · Request a feature
 
 </div>
 
@@ -238,14 +212,22 @@ AI Automation | FinTech Platforms | Custom Software and Mobile Apps | SaaS Platf
 
 **Join our community on Telegram:** [t.me/+Qt_eFvkb2rliMzNh](https://t.me/+Qt_eFvkb2rliMzNh)
 
-[Home](https://www.swifttechco.com) | [Services](https://www.swifttechco.com/services) | [Careers](https://www.swifttechco.com/careers) | [Referral Program](https://www.swifttechco.com/referral) | [Influencers](https://www.swifttechco.com/influencers) | [About](https://www.swifttechco.com/about) | [Contact](https://www.swifttechco.com/contact)
+Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: [swifttechco.com](https://www.swifttechco.com)
+- Website: swifttechco.com
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [PurpleDoubleD/locally-uncensored](https://github.com/PurpleDoubleD/locally-uncensored) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
